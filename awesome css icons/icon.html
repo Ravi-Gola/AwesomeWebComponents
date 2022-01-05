@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+    /* h1{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 47px;
+        font-weight: bold;
+        color: red;
+} */
+
+
+        .box{
+            display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    width: auto;
+        }
+    .box a{
+    border-radius: 27px;
+    padding: 11px;
+    position: relative;
+    transition: 0.1s;
+    margin: 10px;
+    }
+    .box a::before{
+        position:absolute;
+        width: 110px;
+        height: 40px;
+       
+       font-weight: 900;
+       border-radius: 17px;
+       top: 0px;
+       left: -50px;
+       padding-left: 50px;
+       padding-top: 15px;
+       opacity: 0;
+       pointer-events: none;
+       transition: 0.1s;
+    }
+    .box a::after{
+        content: "";
+        width: 0;
+        height: 0;
+        top: 0px;
+        left: 20px;
+        position:absolute;
+        opacity: 0;
+        transition: 0.1s;
+        
+    }
+   
+    .box a:hover::before{
+        top: -100px;
+        opacity: 1;
+    }
+    .box a:hover::after{
+        top: -50px;
+        opacity: 1;
+    }
+
+    /* for facebook */
+    #fb{
+        background-color:rgb(9, 10, 85);
+   
+    }
+    #fb::before{
+        content:"facebook";
+        background-color: rgb(9, 10, 85);
+        color: white;
+    }
+    #fb::after{
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid rgb(9, 10, 85);
+    }
+    .icon1{
+        font-size: 50px;
+        color: white;
+        transition: 0.1s;
+    }
+
+    /* for twitter */
+    #twit{
+        background-color:skyblue;
+    }
+   
+    #twit::before{
+        content:"Twitter";
+        background-color: skyblue;
+        color: white;
+    }
+    #twit::after{
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid skyblue;
+    }
+    .icon2{
+        font-size: 50px;
+        color: white;
+        transition: 0.1s;
+    }
+    
+    /* for instagram */
+    #insta{
+        background: linear-gradient(to right,orange,red,rgb(207, 36, 150));
+    }
+    #insta::before{
+        content:"Instagram";
+        background:linear-gradient(to right,orange,red,rgb(207, 36, 150));
+        color: white;
+    }
+    #insta::after{
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid red;
+    }
+    .icon3{
+        font-size: 50px;
+        color: white;
+        transition: 0.1s;
+    }
+
+    /* for linkdin */
+    #link{
+        background-color:blue;
+    }
+    #link::before{
+        content:"Linkdin";
+        background-color: blue;
+        color: white;
+    }
+    #link::after{
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid blue;
+    }
+    .icon4{
+        font-size: 50px;
+        color: white;
+        transition: 0.1s;
+    }
+   
+    </style>
+</head>
+<body>
+       <h1>Awesome icons hover effect</h1>
+       <div class="box">
+           <a id="fb" href="www.facebook.com"><i class="icon1 fa fa-facebook" aria-hidden="true"></i></a>
+           <a id="twit" href="www.twitter.com"><i class=" icon2 fa fa-twitter" aria-hidden="true"></i></a>
+           <a id="insta" href="www.instagram.com"><i class="icon3 fa fa-instagram" aria-hidden="true"></i></a>
+           <a id="link" href="www.linkdin.com"><i class="icon4 fa fa-linkedin" aria-hidden="true"></i></a>
+       </div>
+        
+        
+</body>
+</html>
