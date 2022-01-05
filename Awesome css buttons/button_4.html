@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type 4 hover button</title>
+    <style>
+        h1{
+            font-weight: bold;
+    font-size: 51px;
+    text-align: center;
+    margin: 85px;
+        }
+        .container{
+            display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 83px;
+    padding: 33px;
+    background-color: black;
+            
+        }
+        .btn{
+            text-decoration: none;
+            margin: 19px;
+            font-weight: bold;
+            border-radius: 67px;
+            border: 1px solid whitesmoke;
+            color: #ffffff;
+            padding: 17px;
+            padding-left: 36px;
+            padding-right: 36px;
+            font-weight: bold;
+            transition: 0.8s;
+            position: relative;
+            
+        }
+        .bt1:hover{
+            border: 0px solid transparent;
+            background-color: skyblue;
+            box-shadow: -2px 2px 32px 1px whitesmoke;
+        }
+        .bt2:hover{
+            border: 0px solid transparent;
+            background-color: rgb(244, 247, 86);
+            box-shadow: -2px 2px 32px 1px rgb(248, 250, 126);
+        }
+        .bt3:hover{
+            border: 0px solid transparent;
+            background-color: rgb(250, 7, 7);
+            box-shadow: -2px 2px 32px 1px rgb(250, 96, 96);
+        }
+        .bt4:hover{
+            border: 0px solid transparent;
+            background: linear-gradient(to right,red,orange,
+                    yellow,green,blue,pink,violet);
+            box-shadow: -2px 2px 32px 1px red,2px 4px 32px 1px orange,
+            -5px 5px 32px 1px yellow,-6px 6px 32px 1px green,
+            -8px 8px 32px 1px blue,-10px 10px 32px 1px violet; 
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Beautiful Buttons</h1>
+    <div class="container">
+        <a class="btn bt1" href="">Hover Me</a>
+        <a class="btn bt2" href="">Hover Me</a>
+        <a class="btn bt3" href="">Hover Me</a>
+        <a class="btn bt4" href="">Hover Me</a>
+    </div>
+</body>
+</html>

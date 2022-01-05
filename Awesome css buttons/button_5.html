@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type 5 hover button</title>
+    <style>
+        h1{
+            font-weight: bold;
+    font-size: 51px;
+    text-align: center;
+    margin: 85px;
+        }
+        div{
+            display: flex;
+    justify-content: center;
+    padding: 97px;
+    perspective: 320px;
+        }
+        .btn{
+            display:block;
+        margin: 40px ;
+        width: 240px;
+        height: 80px;
+        border: none;
+        background-color: chocolate;
+        color: white;
+        font-size: 18px;
+        border-radius: 6px;
+        outline: none;
+        cursor: pointer;
+        transition: .3s linear ;
+        }
+        .bt1:hover{
+            transform:rotateX(15deg);
+          box-shadow: 0 15px 15px chocolate;
+        }
+        .bt2:hover{
+            transform:rotateX(-15deg);
+          box-shadow: 0 -15px 15px chocolate;
+        }
+        .bt3:hover{
+            transform:rotateY(15deg);
+          box-shadow: -15px 0 15px chocolate;
+        }
+        .bt4:hover{
+            transform:rotateY(-15deg);
+          box-shadow: 15px 0 15px chocolate;
+        }
+    </style>
+</head>
+<body>
+    <h1>Beautiful Buttons</h1>
+    <div >
+        <button class="btn bt1">Hover Me</button>
+        <button class="btn bt2">Hover Me</button>
+        <button class="btn bt3">Hover Me</button>
+        <button class="btn bt4">Hover Me</button>
+    </div>
+</body>
+</html>
